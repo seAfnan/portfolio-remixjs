@@ -43,9 +43,8 @@ export default function Index() {
             <h1 className="cursor-default text-3xl font-bold text-gray-800 dark:text-gray-100 font-verdana">
               # <span className="underline ml-2">everything</span>
             </h1>
-            <h1 className="xxs:text-sm md:text-md font-mono text-gray-800 dark:text-gray-100 mt-6 ml-2">
-              A space built by{" "}
-              <span className="cursor-pointer underline">Afnan</span>
+            <h1 className="cursor-default xxs:text-sm md:text-md font-mono text-gray-800 dark:text-gray-100 mt-6 ml-2">
+              A space built by <span className="underline">Afnan</span>
             </h1>
           </div>
         </header>
