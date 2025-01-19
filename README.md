@@ -1,4 +1,4 @@
-# Welcome to my Portfolio with Remix!
+# Welcome to my portfolio with Remix!
 
 - 📖 [Remix docs](https://remix.run/docs)
 
