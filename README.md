@@ -2,6 +2,16 @@
 
 - 📖 [Remix docs](https://remix.run/docs)
 
+## .env
+
+Create .env file on your end and update it according to .env.example
+
+## Install npm
+
+```shellscript
+npm i
+```
+
 ## Development
 
 Run the dev server:
