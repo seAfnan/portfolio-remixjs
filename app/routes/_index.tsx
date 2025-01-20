@@ -78,6 +78,7 @@ export default function Index() {
                 <p className="font-light text-sm text-gray-800 dark:text-gray-300 hover:text-black dark:hover:text-gray-200 overflow-hidden text-ellipsis">
                   {resource.details}
                 </p>
+                {/* Stack always on the left */}
                 {resource.stack && (
                   <div className="absolute bottom-4 left-0 flex justify-between items-center w-full px-4">
                     <ul className="flex space-x-1 text-xs text-gray-700 dark:text-gray-300 overflow-x-auto">
