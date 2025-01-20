@@ -19,7 +19,7 @@ import { FaQuestion } from "react-icons/fa";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "hashtag tech." },
+    { title: "Hashtag tech." },
     { name: "description", content: "Ideas with a new look." },
   ];
 };
