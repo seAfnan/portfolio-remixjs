@@ -41,10 +41,12 @@ export default function Index() {
               className="hidden w-full dark:block"
             /> */}
             <h1 className="cursor-default text-3xl font-bold text-gray-800 dark:text-gray-100 font-verdana">
-              # <span className="underline ml-2">everything</span>
+              {/* # <span className="underline ml-2">everything</span> */}
+              <span className="ml-2">Afnan A.</span>
             </h1>
             <h1 className="cursor-default xxs:text-sm md:text-md font-mono text-gray-800 dark:text-gray-100 mt-6 ml-2">
-              A space built by <span className="underline">Afnan</span>
+              {/* A space built by <span className="underline">Afnan</span> */}I
+              build <span className="underline">Things</span>
             </h1>
           </div>
         </header>
