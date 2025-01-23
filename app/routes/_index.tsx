@@ -79,24 +79,26 @@ export default function Index() {
           </div>
           <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxs:mt-6 sm:mt-10">
             {resources.map((resource, index) => (
-              <div
+              <a
+                href={resource.href}
+                target="_blank"
                 key={index}
-                className="relative flex flex-col items-start p-4 bg-white dark:bg-neutral-900 border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300 w-full max-w-xs h-44 cursor-default"
+                className="relative flex flex-col items-start p-4 bg-white dark:bg-neutral-900 border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300 w-full max-w-xs h-44 cursor-pointer group"
               >
                 <div className="flex justify-between items-center w-full mb-2">
-                  <a href={resource.href} target="_blank">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 hover:underline">
-                      {resource.label.split("").map((char, charIndex) =>
-                        resource.highlightIndices.includes(charIndex) ? (
-                          <span key={charIndex} className={resource.textColor}>
-                            {char}
-                          </span>
-                        ) : (
-                          char
-                        )
-                      )}
-                    </h3>
-                  </a>
+                  <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 relative">
+                    {resource.label.split("").map((char, charIndex) =>
+                      resource.highlightIndices.includes(charIndex) ? (
+                        <span key={charIndex} className={resource.textColor}>
+                          {char}
+                        </span>
+                      ) : (
+                        char
+                      )
+                    )}
+                    {/* Underline animation */}
+                    <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-800 dark:bg-gray-100 scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </h3>
                   <div
                     className={`text-xl text-gray-800 dark:text-white ${resource.iconColor}`}
                   >
@@ -124,14 +126,11 @@ export default function Index() {
                     </ul>
                   </div>
                 )}
-
                 {/* Icon, always on the right */}
-                <div className="absolute bottom-4 right-4 text-xl text-blue-500 dark:text-white hover:dark:text-blue-500">
-                  <a href={resource.href} target="_blank">
-                    <BsFillArrowUpRightCircleFill />
-                  </a>
-                </div>
-              </div>
+                {/* <div className="absolute bottom-4 right-4 text-xl text-blue-500 dark:text-white hover:dark:text-blue-500">
+                  <BsFillArrowUpRightCircleFill />
+                </div> */}
+              </a>
             ))}
           </div>
         </div>

@@ -76,7 +76,7 @@ const HireMe = () => {
             target="_blank"
           >
             <FaUpwork />
-            <span className="xxs:hidden xs:block">connect on upwork</span>
+            <span className="xxs:text-xs md:text-sm">connect on upwork</span>
           </a>
           <small>or</small>
           <span>here</span>
