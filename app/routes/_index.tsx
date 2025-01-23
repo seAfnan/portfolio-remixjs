@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import { FaFile } from "react-icons/fa";
 import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 import { CgTimelapse } from "react-icons/cg";
 import { GoTasklist } from "react-icons/go";
@@ -16,6 +15,8 @@ import { RiLoginBoxFill } from "react-icons/ri";
 import { PiGameControllerFill } from "react-icons/pi";
 import { MdSportsCricket } from "react-icons/md";
 import { FaQuestion } from "react-icons/fa";
+import { MdOutlineDraw } from "react-icons/md";
+import Typewriter from "typewriter-effect";
 
 export const meta: MetaFunction = () => {
   return [
@@ -27,35 +28,60 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="flex min-h-screen justify-center xxs:mt-10 md:mt-6">
-      <div className="flex flex-col items-center gap-16">
-        <header className="flex flex-col items-center gap-9">
-          <div>
-            {/* <img
-              src="/oie_RhzYGnxzS5TR.png"
-              alt="Remix"
-              className="block w-full dark:hidden"
-            />
-            <img
-              src="/oie_RhzYGnxzS5TR.png"
-              alt="Remix"
-              className="hidden w-full dark:block"
-            /> */}
-            <h1 className="cursor-default text-3xl font-bold text-gray-800 dark:text-gray-100 font-verdana">
-              {/* # <span className="underline ml-2">everything</span> */}
-              <span className="ml-2">Afnan A.</span>
-            </h1>
-            <h1 className="cursor-default xxs:text-sm md:text-md font-mono text-gray-800 dark:text-gray-100 mt-6 ml-2">
-              {/* A space built by <span className="underline">Afnan</span> */}I
-              build <span className="underline">Things</span>
+      <div className="flex flex-col items-center gap-6">
+        {/* <header className="flex flex-col items-center gap-6 px-4 sm:px-2 lg:px-4">
+        </header> */}
+
+        <div className="container mx-auto p-4 pt-0">
+          <div className="max-w-screen-lg">
+            {/* <h2 className="text-xl font-bold text-gray-800 font-mono dark:text-gray-100">
+              Greetings👋
+            </h2> */}
+            {/* <hr /> */}
+            <h1 className="cursor-default text-sm sm:text-base md:text-md font-mono text-gray-800 dark:text-gray-100 mt-2">
+              <span>
+                <div className="items-center">
+                  <span className="mr-2 text-2xl text-gray-100">
+                    <span className="">Hi,</span> I'm{" "}
+                    <span className="font-bold">Afnan</span>
+                  </span>
+                  <hr className="mb-4" />
+                  <span className="flex text-amber-400">
+                    I am a&nbsp;
+                    <Typewriter
+                      options={{
+                        strings: [
+                          " software engineer.",
+                          " javascript developer.",
+                          " freelancer.",
+                          // " full stack developer.",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        deleteSpeed: 50,
+                      }}
+                    />
+                  </span>
+                </div>
+                {/* <hr className="mb-4" /> */}
+                <span className="text-gray-800 dark:text-gray-300">
+                  I have an extensive experience in building modern web
+                  applications. I specialize in using cutting-edge technologies
+                  to create innovative and efficient solutions. My focus is on
+                  delivering high-quality projects that meet user and client
+                  needs.
+                </span>{" "}
+                <span className="hover:underline text-blue-400">
+                  See my work below
+                </span>
+              </span>
             </h1>
           </div>
-        </header>
-        <div className="container mx-auto p-4 pt-0">
-          <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxs:mt-6 sm:mt-10">
             {resources.map((resource, index) => (
               <div
                 key={index}
-                className="relative flex flex-col items-start p-4 bg-white dark:bg-[#101623] border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-gray-900 transition-shadow duration-300 w-full max-w-xs h-44 cursor-default"
+                className="relative flex flex-col items-start p-4 bg-white dark:bg-neutral-900 border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300 w-full max-w-xs h-44 cursor-default"
               >
                 <div className="flex justify-between items-center w-full mb-2">
                   <a href={resource.href} target="_blank">
@@ -122,7 +148,7 @@ const resources = [
     highlightIndices: [2],
     details:
       "A super intuitive SaaS space for drawing, sketches, notes, brainstorming, and sharing ideas visually🔥",
-    icon: <FaFile />,
+    icon: <MdOutlineDraw />,
     iconColor: "hover:text-red-500 dark:hover:text-red-500",
     textColor: "text-red-500",
     stack: ["ts", "nextjs", "zustand", "mongodb"],
@@ -155,7 +181,7 @@ const resources = [
     href: "https://next-preference-reset.vercel.app/",
     codeLink: "https://github.com/seAfnan/next-preference-reset",
     label: "Preference setter",
-    highlightIndices: [2],
+    highlightIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     details: "App visual for muslims to set, reset the preference in life",
     icon: <RiResetLeftFill />,
     iconColor: "hover:text-emerald-500 dark:hover:text-emerald-500",

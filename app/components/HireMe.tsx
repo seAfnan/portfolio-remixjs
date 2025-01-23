@@ -1,6 +1,7 @@
 import { Form, useActionData, useNavigation } from "@remix-run/react";
 import { useState, useEffect } from "react";
 import type { ActionData } from "~/routes/hire-me";
+import { FaUpwork } from "react-icons/fa6";
 
 const HireMe = () => {
   const navigation = useNavigation();
@@ -62,14 +63,23 @@ const HireMe = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white dark:bg-gray-950 p-1">
+    <div className="flex justify-center items-center min-h-screen bg-white dark:bg-[#121212] p-1">
       <Form
         method="post"
         onSubmit={handleSubmit}
-        className="bg-gray-100 dark:bg-[#101623] p-6 w-full max-w-lg relative xxs:top-[5vh] lg:top-[-5vh] border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-gray-900 transition-shadow duration-300"
+        className="bg-gray-100 dark:bg-neutral-900 p-6 w-full max-w-lg relative xxs:top-[5vh] lg:top-[-5vh] border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300"
       >
-        <h2 className="xxs:text-lg md:text-2xl font-bold text-gray-800 dark:text-white mb-4">
-          Hire Me
+        <h2 className="xxs:text-lg md:text-xl text-gray-800 dark:text-white mb-4 flex items-center gap-2">
+          <a
+            href="https://www.upwork.com/freelancers/~018db7b9a500344b2a?mp_source=share"
+            className="flex items-center gap-2 xxs:p-1 md:p-2 bg-gray-200 dark:bg-zinc-800 text-gray-800 dark:text-gray-200 rounded hover:bg-gray-300 hover:text-gray-900 dark:hover:bg-zinc-700 dark:hover:text-gray-100 transition-colors duration-100 xs:text-xs"
+            target="_blank"
+          >
+            <FaUpwork />
+            <span className="xxs:hidden xs:block">connect on upwork</span>
+          </a>
+          <small>or</small>
+          <span>here</span>
         </h2>
         <div className="mb-4">
           <label
@@ -89,7 +99,7 @@ const HireMe = () => {
               emailError
                 ? "border-red-500"
                 : "border-gray-300 dark:border-gray-700"
-            } rounded-sm bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none`}
+            } rounded-sm bg-gray-50 dark:bg-neutral-700 text-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none`}
             placeholder="Enter your email"
             required
           />
@@ -109,7 +119,7 @@ const HireMe = () => {
             name="quote"
             value={quote}
             onChange={handleQuoteChange}
-            className="w-full px-2 py-2 border border-gray-300 dark:border-gray-700 rounded-sm bg-gray-50 dark:bg-gray-700 text-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none resize-none"
+            className="w-full px-2 py-2 border border-gray-300 dark:border-gray-700 rounded-sm bg-gray-50 dark:bg-neutral-700 text-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none resize-none"
             rows={6}
             placeholder="Message"
             required
