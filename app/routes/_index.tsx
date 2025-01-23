@@ -45,7 +45,7 @@ export default function Index() {
                     <span className="">Hi,</span> I'm{" "}
                     <span className="font-bold">Afnan</span>
                   </span>
-                  <hr className="mb-4" />
+                  <hr className="mb-4 md:mr-3" />
                   <span className="flex text-amber-400">
                     I am a&nbsp;
                     <Typewriter
