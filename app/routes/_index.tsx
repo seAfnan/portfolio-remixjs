@@ -38,10 +38,10 @@ export default function Index() {
               Greetings👋
             </h2> */}
             {/* <hr /> */}
-            <h1 className="cursor-default text-sm sm:text-base md:text-md font-mono text-gray-800 dark:text-gray-100 mt-2">
+            <h1 className="cursor-default text-sm sm:text-base md:text-md font-mono mt-2">
               <span>
                 <div className="items-center">
-                  <span className="mr-2 text-2xl text-gray-100">
+                  <span className="mr-2 text-2xl text-gray-800 dark:text-gray-300">
                     <span className="">Hi,</span> I'm{" "}
                     <span className="font-bold">Afnan</span>
                   </span>
