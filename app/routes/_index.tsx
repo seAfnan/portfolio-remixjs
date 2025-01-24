@@ -71,9 +71,9 @@ export default function Index() {
                 <span className="text-gray-800 dark:text-gray-300">
                   I have an extensive experience in building modern web
                   applications. I specialize in using cutting-edge technologies
-                  to create innovative and efficient solutions. My focus is on
-                  delivering high-quality projects that meet user and client
-                  needs.
+                  to create innovative and efficient solutions for the past 5+
+                  years. My focus is on delivering high-quality projects that
+                  meet user and client needs.
                 </span>{" "}
                 <span className="text-gray-600 dark:text-gray-400">
                   See my work below.
