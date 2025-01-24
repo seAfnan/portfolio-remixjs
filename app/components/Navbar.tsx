@@ -16,9 +16,8 @@ export default function Navbar() {
     <nav className="flex justify-between items-center pl-4 pr-4 pt-3 pb-3 bg-white dark:bg-[#121212]">
       <Link to="/">
         <h1 className="xxs:text-sm md:text-xl font-bold font-mono text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300">
-          {/* <span className="xxs:hidden xs:block">hashtag tech.</span> */}
-          {/* <span className="xxs:block xs:hidden">#tech.</span> */}
-          <span>#tech</span>
+          <span className="xxs:hidden xs:block">hashtag tech.</span>
+          <span className="xxs:block xs:hidden">#tech.</span>
         </h1>
       </Link>
       <div className="flex items-center space-x-2">

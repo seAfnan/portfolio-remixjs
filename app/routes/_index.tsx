@@ -17,6 +17,7 @@ import { MdSportsCricket } from "react-icons/md";
 import { FaQuestion } from "react-icons/fa";
 import { MdOutlineDraw } from "react-icons/md";
 import Typewriter from "typewriter-effect";
+import { VscChecklist } from "react-icons/vsc";
 
 export const meta: MetaFunction = () => {
   return [
@@ -58,7 +59,7 @@ export default function Index() {
                         ],
                         autoStart: true,
                         loop: true,
-                        deleteSpeed: 50,
+                        deleteSpeed: 10,
                       }}
                     />
                   </span>
@@ -71,8 +72,8 @@ export default function Index() {
                   delivering high-quality projects that meet user and client
                   needs.
                 </span>{" "}
-                <span className="hover:underline text-blue-400">
-                  See my work below
+                <span className="text-gray-600 dark:text-gray-400">
+                  See my work below.
                 </span>
               </span>
             </h1>
@@ -86,18 +87,24 @@ export default function Index() {
                 className="relative flex flex-col items-start p-4 bg-white dark:bg-neutral-900 border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300 w-full max-w-xs h-44 cursor-pointer group"
               >
                 <div className="flex justify-between items-center w-full mb-2">
-                  <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 relative">
-                    {resource.label.split("").map((char, charIndex) =>
-                      resource.highlightIndices.includes(charIndex) ? (
-                        <span key={charIndex} className={resource.textColor}>
-                          {char}
-                        </span>
-                      ) : (
-                        char
-                      )
-                    )}
-                    {/* Underline animation */}
-                    <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-800 dark:bg-gray-100 scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300"></span>
+                  <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 relative flex items-center">
+                    <span className="relative">
+                      {resource.label.split("").map((char, charIndex) =>
+                        resource.highlightIndices.includes(charIndex) ? (
+                          <span key={charIndex} className={resource.textColor}>
+                            {char}
+                          </span>
+                        ) : (
+                          char
+                        )
+                      )}
+                      {/* Underline animation */}
+                      <span className="absolute left-0 bottom-0 w-full h-[1px] bg-gray-800 dark:bg-gray-100 scale-x-0 origin-center group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </span>
+                    {/* Badge */}
+                    <span className="ml-4 px-2 text-xs font-normal text-gray-800 dark:text-white border border-gray-300 dark:border-gray-700 bg-neutral-200 dark:bg-neutral-800 rounded-sm">
+                      {resource.type}
+                    </span>
                   </h3>
                   <div
                     className={`text-xl text-gray-800 dark:text-white ${resource.iconColor}`}
@@ -113,13 +120,10 @@ export default function Index() {
                   <div className="absolute bottom-4 left-0 flex justify-between items-center w-full px-4">
                     <ul className="flex space-x-1 text-xs text-gray-700 dark:text-gray-300 overflow-x-auto">
                       {resource.stack.map((item, idx) => (
-                        <li
-                          key={idx}
-                          className="font-mono text-blue-500 hover:underline"
-                        >
-                          <a href={resource.codeLink} target="_blank">
-                            {item}
-                          </a>
+                        <li key={idx} className="font-mono text-blue-500">
+                          {/* <a href={resource.codeLink} target="_blank"> */}
+                          {item}
+                          {/* </a> */}
                           {idx < resource.stack.length - 1 && ","}
                         </li>
                       ))}
@@ -150,6 +154,7 @@ const resources = [
     icon: <MdOutlineDraw />,
     iconColor: "hover:text-red-500 dark:hover:text-red-500",
     textColor: "text-red-500",
+    type: "live",
     stack: ["ts", "nextjs", "zustand", "mongodb"],
   },
   {
@@ -162,19 +167,21 @@ const resources = [
     icon: <CgTimelapse />,
     iconColor: "hover:text-orange-500 dark:hover:text-orange-500",
     textColor: "text-orange-500",
+    type: "code",
     stack: ["ts", "react", "zustand", "mongodb"],
   },
   {
-    href: "https://github.com/seAfnan/nextjs-trelloboard",
-    codeLink: "https://github.com/seAfnan/nextjs-trelloboard",
-    label: "Trelloboard",
-    highlightIndices: [6, 7, 8, 9, 10],
+    href: "https://weather-app-by-afnan.netlify.app/",
+    codeLink: "https://github.com/seAfnan/react-weather-app",
+    label: "Temp Compare",
+    highlightIndices: [4, 5, 6, 7, 8, 9, 10, 11],
     details:
-      "A visual collaboration tool for organizing tasks, projects, and workflows efficiently",
-    icon: <GoTasklist />,
+      "Compare temperatures across different cities worldwide for quick, real-time weather insights and analysis",
+    icon: <TiWeatherPartlySunny />,
     iconColor: "hover:text-lime-500 dark:hover:text-lime-500",
     textColor: "text-lime-500",
-    stack: ["ts", "nextjs", "tailwind", "mysql"],
+    type: "live",
+    stack: ["js", "react", "vite", "chakraui"],
   },
   {
     href: "https://next-preference-reset.vercel.app/",
@@ -182,9 +189,10 @@ const resources = [
     label: "Preference setter",
     highlightIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     details: "App visual for muslims to set, reset the preference in life",
-    icon: <RiResetLeftFill />,
+    icon: <VscChecklist />,
     iconColor: "hover:text-emerald-500 dark:hover:text-emerald-500",
     textColor: "text-emerald-500",
+    type: "live",
     stack: ["ts", "nextjs", "tailwind"],
   },
   {
@@ -197,19 +205,21 @@ const resources = [
     icon: <MdListAlt />,
     iconColor: "hover:text-amber-500 dark:hover:text-amber-500",
     textColor: "text-amber-500",
+    type: "code",
     stack: ["dart", "flutter", "hive"],
   },
   {
-    href: "https://github.com/seAfnan/react-cli",
-    codeLink: "https://github.com/seAfnan/react-cli",
-    label: "CLI",
-    highlightIndices: [0, 1, 2],
+    href: "https://react-game-app-by-afnan.vercel.app/",
+    codeLink: "https://github.com/seAfnan/react-game-app",
+    label: "Gaming site",
+    highlightIndices: [7, 8, 9, 10],
     details:
-      "Command line app for help, cryptocurrency prices, CSV uploads, charting, file management, and app information",
-    icon: <HiCommandLine />,
-    iconColor: "hover:text-blue-500 dark:hover:text-blue-500",
-    textColor: "text-blue-500",
-    stack: ["ts", "js", "react", "vite", "nodejs", "electron"],
+      "A gaming website featuring popular video games with search, filtering, and detailed information",
+    icon: <PiGameControllerFill />,
+    iconColor: "hover:text-emerald-500 dark:hover:text-emerald-500",
+    textColor: "text-emerald-500",
+    type: "live",
+    stack: ["ts", "react", "vite"],
   },
   {
     href: "https://github.com/seAfnan/nextjs-request-ms",
@@ -221,6 +231,7 @@ const resources = [
     icon: <SiGoogleforms />,
     iconColor: "hover:text-lime-500 dark:hover:text-lime-500",
     textColor: "text-lime-500",
+    type: "code",
     stack: ["ts", "nextjs", "mysql", "radixui", "oath"],
   },
   {
@@ -233,6 +244,7 @@ const resources = [
     icon: <WiMoonAltWaxingGibbous1 />,
     iconColor: "hover:text-stone-500 dark:hover:text-stone-500",
     textColor: "text-stone-500",
+    type: "code",
     stack: ["dart", "flutter"],
   },
   {
@@ -245,6 +257,7 @@ const resources = [
     icon: <FaListOl />,
     iconColor: "hover:text-cyan-500 dark:hover:text-cyan-500",
     textColor: "text-cyan-500",
+    type: "live",
     stack: ["ts", "react", "vite"],
   },
   {
@@ -257,6 +270,7 @@ const resources = [
     icon: <IoChatboxEllipsesSharp />,
     iconColor: "hover:text-orange-500 dark:hover:text-orange-500",
     textColor: "text-orange-500",
+    type: "code",
     stack: ["ts", "nextjs", "gpt"],
   },
   {
@@ -269,19 +283,21 @@ const resources = [
     icon: <MdOutlineStar />,
     iconColor: "hover:text-amber-500 dark:hover:text-amber-500",
     textColor: "text-amber-500",
+    type: "code",
     stack: ["dart", "flutter"],
   },
   {
-    href: "https://weather-app-by-afnan.netlify.app/",
-    codeLink: "https://github.com/seAfnan/react-weather-app",
-    label: "Temp Compare",
-    highlightIndices: [4, 5, 6, 7, 8, 9, 10, 11],
+    href: "https://github.com/seAfnan/nextjs-trelloboard",
+    codeLink: "https://github.com/seAfnan/nextjs-trelloboard",
+    label: "Trelloboard",
+    highlightIndices: [6, 7, 8, 9, 10],
     details:
-      "Compare temperatures across different cities worldwide for quick, real-time weather insights and analysis",
-    icon: <TiWeatherPartlySunny />,
+      "A visual collaboration tool for organizing tasks, projects, and workflows efficiently",
+    icon: <GoTasklist />,
     iconColor: "hover:text-lime-500 dark:hover:text-lime-500",
     textColor: "text-lime-500",
-    stack: ["js", "react", "vite", "chakraui"],
+    type: "code",
+    stack: ["ts", "nextjs", "tailwind", "mysql"],
   },
   {
     href: "https://github.com/seAfnan/react-node-login",
@@ -293,19 +309,21 @@ const resources = [
     icon: <RiLoginBoxFill />,
     iconColor: "hover:text-neutral-500 dark:hover:text-neutral-500",
     textColor: "text-neutral-500",
+    type: "code",
     stack: ["ts", "js", "react", "nodejs", "express"],
   },
   {
-    href: "https://react-game-app-by-afnan.vercel.app/",
-    codeLink: "https://github.com/seAfnan/react-game-app",
-    label: "Gaming site",
-    highlightIndices: [7, 8, 9, 10],
+    href: "https://github.com/seAfnan/react-cli",
+    codeLink: "https://github.com/seAfnan/react-cli",
+    label: "CLI",
+    highlightIndices: [0, 1, 2],
     details:
-      "A gaming website featuring popular video games with search, filtering, and detailed information",
-    icon: <PiGameControllerFill />,
-    iconColor: "hover:text-emerald-500 dark:hover:text-emerald-500",
-    textColor: "text-emerald-500",
-    stack: ["ts", "react", "vite"],
+      "Command line app for help, cryptocurrency prices, CSV uploads, charting, file management, and app information",
+    icon: <HiCommandLine />,
+    iconColor: "hover:text-blue-500 dark:hover:text-blue-500",
+    textColor: "text-blue-500",
+    type: "code",
+    stack: ["ts", "js", "react", "vite", "nodejs", "electron"],
   },
   {
     href: "https://github.com/seAfnan/cricket-scoreboard",
@@ -317,6 +335,7 @@ const resources = [
     icon: <MdSportsCricket />,
     iconColor: "hover:text-sky-500 dark:hover:text-sky-500",
     textColor: "text-sky-500",
+    type: "code",
     stack: ["js", "handlebars", "nodejs", "python"],
   },
   {
@@ -329,6 +348,7 @@ const resources = [
     icon: <FaQuestion />,
     iconColor: "hover:text-lime-500 dark:hover:text-lime-500",
     textColor: "text-lime-500",
+    type: "code",
     stack: ["html", "css", "js"],
   },
 ];
