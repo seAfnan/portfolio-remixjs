@@ -67,7 +67,7 @@ const HireMe = () => {
       <Form
         method="post"
         onSubmit={handleSubmit}
-        className="bg-gray-100 dark:bg-neutral-900 p-6 w-full max-w-lg relative xxs:top-[5vh] lg:top-[-5vh] border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300"
+        className="bg-gray-100 dark:bg-neutral-900 p-6 w-full max-w-lg relative xxs:top-[2vh] lg:top-[-5vh] border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300"
       >
         <h2 className="xxs:text-lg md:text-xl text-gray-800 dark:text-white mb-4 flex items-center gap-2">
           <a
