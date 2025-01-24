@@ -47,7 +47,7 @@ export default function Index() {
                     style={{ fontFamily: "verdana" }}
                   >
                     <span className="">Hi, </span> I'm{" "}
-                    <span className="font-bold">Afnan👋</span>
+                    <span className="font-bold">Afnan 👋</span>
                   </span>
                   <hr className="mb-4 md:mr-3" />
                   <span className="flex text-amber-400">
