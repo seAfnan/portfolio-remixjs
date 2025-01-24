@@ -42,9 +42,12 @@ export default function Index() {
             <h1 className="cursor-default text-sm sm:text-base md:text-md font-mono mt-2">
               <span>
                 <div className="items-center">
-                  <span className="mr-2 text-2xl text-gray-800 dark:text-gray-300">
-                    <span className="">Hi,</span> I'm{" "}
-                    <span className="font-bold">Afnan</span>
+                  <span
+                    className="mr-2 text-2xl text-gray-800 dark:text-gray-300"
+                    style={{ fontFamily: "verdana" }}
+                  >
+                    <span className="">Hi, </span> I'm{" "}
+                    <span className="font-bold">Afnan👋</span>
                   </span>
                   <hr className="mb-4 md:mr-3" />
                   <span className="flex text-amber-400">
