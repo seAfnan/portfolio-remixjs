@@ -63,7 +63,7 @@ const HireMe = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white dark:bg-[#121212] p-1">
+    <div className="flex justify-center items-center min-h-screen p-1 bg-gradient-to-b from-indigo-400 via-indigo-300 to-indigo-200 text-black dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-950 dark:to-gray-950 dark:text-white">
       <Form
         method="post"
         onSubmit={handleSubmit}

@@ -28,8 +28,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="flex min-h-screen justify-center xxs:mt-10 md:mt-6">
-      <div className="flex flex-col items-center gap-6">
+    <div className="flex min-h-screen justify-center bg-gradient-to-b from-indigo-400 via-indigo-300 to-indigo-200 text-black dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-950 dark:to-black dark:text-white">
+      <div className="flex flex-col items-center gap-6 xxs:mt-10 md:mt-6">
         {/* <header className="flex flex-col items-center gap-6 px-4 sm:px-2 lg:px-4">
         </header> */}
 
@@ -50,7 +50,7 @@ export default function Index() {
                     <span className="font-bold">Afnan 👋</span>
                   </span>
                   <hr className="mb-4 md:mr-3" />
-                  <span className="flex text-amber-400">
+                  <span className="flex text-white dark:text-amber-400">
                     I am a&nbsp;
                     <Typewriter
                       options={{
@@ -87,7 +87,7 @@ export default function Index() {
                 href={resource.href}
                 target="_blank"
                 key={index}
-                className="relative flex flex-col items-start p-4 bg-white dark:bg-neutral-900 border-t border-gray-400 dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-lg dark:hover:shadow-stone-800 transition-shadow duration-300 w-full max-w-xs h-44 cursor-pointer group"
+                className="relative flex flex-col items-start p-4 bg-white dark:bg-neutral-900 border-t dark:border-gray-400 border-l border-r dark:border-l-0 dark:border-r-0 shadow-sm dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-stone-800 transition-shadow duration-300 w-full max-w-xs h-44 cursor-pointer group rounded-lg"
               >
                 <div className="flex justify-between items-center w-full mb-2">
                   <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 relative flex items-center">
@@ -156,7 +156,7 @@ const resources = [
       "A super intuitive SaaS space for drawing, sketches, notes, brainstorming, and sharing ideas visually🔥",
     icon: <MdOutlineDraw />,
     iconColor: "hover:text-red-500 dark:hover:text-red-500",
-    textColor: "text-red-500",
+    textColor: "text-red-600",
     type: "live",
     stack: ["ts", "nextjs", "zustand", "mongodb"],
   },
@@ -164,7 +164,7 @@ const resources = [
     href: "https://github.com/seAfnan/timesheet-pro",
     codeLink: "https://github.com/seAfnan/timesheet-pro",
     label: "Timesheet",
-    highlightIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    highlightIndices: [],
     details:
       "This system lets employees log hours, manage overtime, and handle approvals efficiently",
     icon: <CgTimelapse />,
@@ -177,7 +177,7 @@ const resources = [
     href: "https://weather-app-by-afnan.netlify.app/",
     codeLink: "https://github.com/seAfnan/react-weather-app",
     label: "Temp Compare",
-    highlightIndices: [4, 5, 6, 7, 8, 9, 10, 11],
+    highlightIndices: [],
     details:
       "Compare temperatures across different cities worldwide for quick, real-time weather insights and analysis",
     icon: <TiWeatherPartlySunny />,
@@ -190,7 +190,7 @@ const resources = [
     href: "https://next-preference-reset.vercel.app/",
     codeLink: "https://github.com/seAfnan/next-preference-reset",
     label: "Preference setter",
-    highlightIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    highlightIndices: [],
     details: "App visual for muslims to set, reset the preference in life",
     icon: <VscChecklist />,
     iconColor: "hover:text-emerald-500 dark:hover:text-emerald-500",
@@ -202,7 +202,7 @@ const resources = [
     href: "https://github.com/seAfnan/taskify-flutter",
     codeLink: "https://github.com/seAfnan/taskify-flutter",
     label: "Taskify",
-    highlightIndices: [0, 1, 2, 3, 4],
+    highlightIndices: [],
     details:
       "Flutter app to keep track of daily tasks, with a simple and clean UI",
     icon: <MdListAlt />,
@@ -215,7 +215,7 @@ const resources = [
     href: "https://react-game-app-by-afnan.vercel.app/",
     codeLink: "https://github.com/seAfnan/react-game-app",
     label: "Gaming site",
-    highlightIndices: [7, 8, 9, 10],
+    highlightIndices: [],
     details:
       "A gaming website featuring popular video games with search, filtering, and detailed information",
     icon: <PiGameControllerFill />,
@@ -228,7 +228,7 @@ const resources = [
     href: "https://github.com/seAfnan/nextjs-request-ms",
     codeLink: "https://github.com/seAfnan/nextjs-request-ms",
     label: "RMS",
-    highlightIndices: [0, 1, 2],
+    highlightIndices: [],
     details:
       "A Request Management System for tracking, assigning, editing requests, with charts, OAuth, and theming",
     icon: <SiGoogleforms />,
@@ -241,7 +241,7 @@ const resources = [
     href: "https://github.com/seAfnan/goodbye_world_flutter",
     codeLink: "https://github.com/seAfnan/goodbye_world_flutter",
     label: "Goodbye world",
-    highlightIndices: [8, 9, 10, 11, 12],
+    highlightIndices: [],
     details:
       "Flutter app with dropdowns for people, travel class, and destinations like Mars or Moon.",
     icon: <WiMoonAltWaxingGibbous1 />,
@@ -254,7 +254,7 @@ const resources = [
     href: "https://react-expense-app-by-afnan.netlify.app/",
     codeLink: "https://github.com/seAfnan/react-expense-app",
     label: "Expense tracker",
-    highlightIndices: [0, 1, 2, 3, 4, 5, 6],
+    highlightIndices: [],
     details:
       "A functional expense tracker for managing daily expenses, needing a refined and improved layout design",
     icon: <FaListOl />,
@@ -267,7 +267,7 @@ const resources = [
     href: "https://github.com/seAfnan/nextjs-gpt-chatbot",
     codeLink: "https://github.com/seAfnan/nextjs-gpt-chatbot",
     label: "GPT Chatbot",
-    highlightIndices: [4, 5, 6, 7, 8, 9, 10, 11],
+    highlightIndices: [],
     details:
       "Chatbot component built with OpenAI's GPT-3, for generating human-like text responses",
     icon: <IoChatboxEllipsesSharp />,
@@ -280,7 +280,7 @@ const resources = [
     href: "https://github.com/seAfnan/animation_basics_flutter",
     codeLink: "https://github.com/seAfnan/animation_basics_flutter",
     label: "Animations",
-    highlightIndices: [9],
+    highlightIndices: [],
     details:
       "Flutter app to show how animation works, with a simple and clean UI",
     icon: <MdOutlineStar />,
@@ -293,7 +293,7 @@ const resources = [
     href: "https://github.com/seAfnan/nextjs-trelloboard",
     codeLink: "https://github.com/seAfnan/nextjs-trelloboard",
     label: "Trelloboard",
-    highlightIndices: [6, 7, 8, 9, 10],
+    highlightIndices: [],
     details:
       "A visual collaboration tool for organizing tasks, projects, and workflows efficiently",
     icon: <GoTasklist />,
@@ -319,7 +319,7 @@ const resources = [
     href: "https://github.com/seAfnan/react-cli",
     codeLink: "https://github.com/seAfnan/react-cli",
     label: "CLI",
-    highlightIndices: [0, 1, 2],
+    highlightIndices: [],
     details:
       "Command line app for help, cryptocurrency prices, CSV uploads, charting, file management, and app information",
     icon: <HiCommandLine />,
@@ -332,7 +332,7 @@ const resources = [
     href: "https://github.com/seAfnan/cricket-scoreboard",
     codeLink: "https://github.com/seAfnan/cricket-scoreboard",
     label: "Cricket scoreboard",
-    highlightIndices: [0, 1, 2, 3, 4, 5, 6],
+    highlightIndices: [],
     details:
       "Cricket scoreboard application tracks live scores, manages teams, and handles match statistics and player performance",
     icon: <MdSportsCricket />,
@@ -345,7 +345,7 @@ const resources = [
     href: "https://github.com/seAfnan/javascript-quiz",
     codeLink: "https://github.com/seAfnan/javascript-quiz",
     label: "JavaScript quiz",
-    highlightIndices: [11, 12, 13, 14],
+    highlightIndices: [],
     details:
       "Simple JavaScript quiz application with multiple-choice questions, timer, and instant scoring feedback for learners",
     icon: <FaQuestion />,

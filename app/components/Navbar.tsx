@@ -12,8 +12,7 @@ export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    // <nav className="flex justify-between items-center pl-4 pr-4 pt-3 pb-3 bg-gradient-to-r from-blue-50 via-white to-purple-50 dark:from-gray-950 dark:via-slate-900 dark:to-gray-950">
-    <nav className="flex justify-between items-center pl-4 pr-4 pt-3 pb-3 bg-white dark:bg-[#121212]">
+    <nav className="flex justify-between items-center pl-4 pr-4 pt-3 pb-3 bg-indigo-400 dark:bg-gray-950">
       <Link to="/">
         <h1 className="xxs:text-sm md:text-xl font-bold font-mono text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300">
           <span className="xxs:hidden xs:block">hashtag tech.</span>
