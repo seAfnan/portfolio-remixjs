@@ -7,6 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaHandshake } from "react-icons/fa";
 import { Link } from "@remix-run/react";
 import { IoIosGitMerge } from "react-icons/io";
+import { SiBluesky } from "react-icons/si";
 
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
@@ -41,6 +42,13 @@ export default function Navbar() {
           target="_blank"
         >
           <FaXTwitter />
+        </a>
+        <a
+          href="https://bsky.app/profile/elements.red"
+          className="xxs:p-1 md:p-2 bg-gray-200 dark:bg-zinc-800 text-gray-800 dark:text-gray-200 rounded hover:bg-gray-300 hover:text-gray-900 dark:hover:bg-zinc-700 dark:hover:text-gray-100 transition-colors duration-100"
+          target="_blank"
+        >
+          <SiBluesky />
         </a>
         <a
           href="https://linkedin.com/in/afnan-se"
