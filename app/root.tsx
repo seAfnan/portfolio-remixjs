@@ -11,6 +11,7 @@ import { ThemeProvider } from "./context/theme";
 import "./tailwind.css";
 import Navbar from "./components/Navbar";
 import Scrolltotop from "./components/Scrolltotop";
+import Footer from "./components/Footer";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -38,6 +39,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ThemeProvider>
           <Navbar />
           {children}
+          <Footer />
           <Scrolltotop />
         </ThemeProvider>
         <ScrollRestoration />

@@ -21,36 +21,38 @@ import { VscChecklist } from "react-icons/vsc";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Hashtag tech." },
-    { name: "description", content: "Ideas with a new look." },
+    { title: "Afnan Ahmad" },
+    { name: "description", content: "My personal website." },
   ];
 };
 
 export default function Index() {
   return (
-    <div className="flex min-h-screen justify-center bg-gradient-to-b from-indigo-400 via-indigo-300 to-indigo-200 text-black dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-950 dark:to-black dark:text-white">
-      <div className="flex flex-col items-center gap-6 xxs:mt-10 md:mt-6">
-        {/* <header className="flex flex-col items-center gap-6 px-4 sm:px-2 lg:px-4">
-        </header> */}
-
+    <div className="flex pb-5 min-h-screen justify-center bg-gradient-to-b from-indigo-400 via-indigo-300 to-indigo-200 text-black dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-950 dark:to-black dark:text-white">
+      <div className="flex flex-col items-center gap-6 xxs:mt-6 md:mt-8">
         <div className="container mx-auto p-4 pt-0">
-          <div className="max-w-screen-lg">
-            {/* <h2 className="text-xl font-bold text-gray-800 font-mono dark:text-gray-100">
-              Greetings👋
-            </h2> */}
-            {/* <hr /> */}
-            <h1 className="cursor-default text-sm sm:text-base md:text-md font-mono mt-2">
-              <span>
+          <div className="max-w-screen-lg flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
+            {/* Left Section - Image/Icon */}
+            <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 rounded-full overflow-hidden bg-gray-300 dark:bg-gray-700">
+              <img
+                src="/image.jpg"
+                alt="Afnan"
+                className="w-full h-full object-cover"
+              />
+              {/* <FaUserCircle className="w-full h-full text-gray-600 dark:text-gray-400" /> */}
+            </div>
+            {/* Right Section - Details */}
+            <div>
+              <h1 className="cursor-default text-sm sm:text-base md:text-md font-mono mt-2">
                 <div className="items-center">
                   <span
-                    className="mr-2 text-2xl text-gray-800 dark:text-gray-300"
+                    className="mr-2 xxs:text-2xl md:text-4xl text-gray-800 dark:text-gray-300"
                     style={{ fontFamily: "verdana" }}
                   >
-                    <span className="">Hi, </span> I'm{" "}
-                    <span className="font-bold">Afnan 👋</span>
+                    Hi, I'm <span className="font-bold">Afnan👋</span>
                   </span>
                   <hr className="mb-4 md:mr-3" />
-                  <span className="flex text-white dark:text-amber-400">
+                  {/* <span className="flex text-gray-800 dark:text-amber-400">
                     I am a&nbsp;
                     <Typewriter
                       options={{
@@ -58,29 +60,30 @@ export default function Index() {
                           " software engineer.",
                           " javascript developer.",
                           " freelancer.",
-                          // " full stack developer.",
                         ],
                         autoStart: true,
                         loop: true,
                         deleteSpeed: 10,
                       }}
                     />
-                  </span>
+                  </span> */}
                 </div>
-                {/* <hr className="mb-4" /> */}
+
                 <span className="text-gray-800 dark:text-gray-300">
-                  I have an extensive experience in building modern web
-                  applications. I specialize in using cutting-edge technologies
-                  to create innovative and efficient solutions for the past 5+
-                  years. My focus is on delivering high-quality projects that
-                  meet user and client needs.
-                </span>{" "}
+                  As a software engineer since 2019. I specialize in building
+                  web applications using modern technologies to create
+                  innovative, efficient, and user-centric solutions. My focus is
+                  on delivering high-quality projects that meet user and client
+                  needs.
+                </span>
+                <br />
                 <span className="text-gray-600 dark:text-gray-400">
                   See my work below.
                 </span>
-              </span>
-            </h1>
+              </h1>
+            </div>
           </div>
+
           <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxs:mt-6 sm:mt-10">
             {resources.map((resource, index) => (
               <a
