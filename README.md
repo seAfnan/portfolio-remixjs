@@ -1,7 +1,7 @@
 # Welcome to my portfolio with Remix!
 
 - 📖 [Remix docs](https://remix.run/docs)
-- [See live view](https://hashtagtech.elements.red/)
+- [See live view](https://afnan.elements.red/)
 
 ## .env
 
