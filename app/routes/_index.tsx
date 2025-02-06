@@ -179,7 +179,7 @@ const resources = [
   {
     href: "https://weather-app-by-afnan.netlify.app/",
     codeLink: "https://github.com/seAfnan/react-weather-app",
-    label: "Temp Compare",
+    label: "Temp compare",
     highlightIndices: [],
     details:
       "Compare temperatures across different cities worldwide for quick, real-time weather insights and analysis",
