@@ -21,6 +21,15 @@ export default {
         xs: "480px",
         xxs: "320px",
       },
+      animation: {
+        wave: "wave 1.5s infinite ease-in-out",
+      },
+      keyframes: {
+        wave: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
+      },
     },
   },
   plugins: [],
