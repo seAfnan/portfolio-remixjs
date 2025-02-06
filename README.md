@@ -49,3 +49,16 @@ Make sure to deploy the output of `npm run build`
 ## Styling
 
 This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+
+## Contribution
+
+Contributions are welcome! If you'd like to improve this project, follow these steps:
+
+1. **Fork the Repository** – Click the "Fork" button at the top of the repository.
+2. **Clone Your Fork** – Run `git clone https://github.com/seAfnan/portfolio-remixjs.git`
+3. **Create a Branch** – Use `git checkout -b feature-name`
+4. **Make Changes & Commit** – Modify the code, then commit using `git commit -m "Your message"`
+5. **Push & Create PR** – Push changes with `git push origin feature-name` and create a pull request.
+
+Feel free to report issues or suggest improvements. Happy coding! 🚀
+
