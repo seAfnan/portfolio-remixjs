@@ -151,6 +151,19 @@ export default function Index() {
 
 const resources = [
   {
+    href: "https://botshot.elements.red/",
+    codeLink: "https://github.com/seAfnan/botshot",
+    label: "Botshot",
+    highlightIndices: [2],
+    details:
+      "Botshot is a multi-LLM AI assistant that lets you chat with and compare responses from different language models—locally or via APIs—all in one place.",
+    icon: <MdOutlineDraw />,
+    iconColor: "hover:text-gray-500 dark:hover:text-gray-500",
+    textColor: "text-gray-600",
+    type: "live",
+    stack: ["ts", "nextjs", "oauth", "mongodb"],
+  },
+  {
     href: "https://www.elements.red/",
     codeLink: "https://www.elements.red/",
     label: "elements",
