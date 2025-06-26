@@ -16,6 +16,7 @@ import { PiGameControllerFill } from "react-icons/pi";
 import { MdSportsCricket } from "react-icons/md";
 import { FaQuestion } from "react-icons/fa";
 import { MdOutlineDraw } from "react-icons/md";
+import { RiRobot2Fill } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
 import { VscChecklist } from "react-icons/vsc";
 
@@ -154,10 +155,10 @@ const resources = [
     href: "https://botshot.elements.red/",
     codeLink: "https://github.com/seAfnan/botshot",
     label: "Botshot",
-    highlightIndices: [2],
+    highlightIndices: [],
     details:
       "Botshot is a multi-LLM AI assistant that lets you chat with and compare responses from different language models—locally or via APIs—all in one place.",
-    icon: <MdOutlineDraw />,
+    icon: <RiRobot2Fill />,
     iconColor: "hover:text-gray-500 dark:hover:text-gray-500",
     textColor: "text-gray-600",
     type: "live",
