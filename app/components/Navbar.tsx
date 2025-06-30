@@ -60,7 +60,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex justify-between items-center xxs:px-2 md:px-6 py-3 bg-indigo-400 dark:bg-gray-950 shadow">
+    <nav className="flex justify-between items-center xxs:px-2 md:px-6 py-3 bg-indigo-300 dark:bg-gray-950 shadow">
       {/* Centered Links */}
       <div className="flex-1 flex justify-center xxs:space-x-1 md:space-x-3">
         {links.map(({ href, label, icon }) => {

@@ -29,7 +29,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="flex pb-5 min-h-screen justify-center bg-gradient-to-b from-indigo-400 via-indigo-300 to-indigo-200 text-black dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-950 dark:to-black dark:text-white">
+    <div className="flex pb-5 min-h-screen justify-center bg-gradient-to-b from-indigo-300 via-indigo-200 to-indigo-100 text-black dark:bg-gradient-to-b dark:from-gray-950 dark:via-gray-950 dark:to-black dark:text-white">
       <div className="flex flex-col items-center gap-6 xxs:mt-6 md:mt-8">
         <div className="container mx-auto p-4 pt-0">
           <div className="max-w-screen-lg flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
