@@ -103,7 +103,7 @@ export default function Navbar() {
           <span className="absolute -top-1 left-1/2 w-6 h-6 bg-red-500 rounded-full opacity-75 animate-wave"></span>
           <span className="absolute -bottom-1 right-1/2 w-6 h-6 bg-blue-500 rounded-full opacity-75 animate-wave"></span>
         </a>
-        <a
+        {/*<a
           href="https://botshot.elements.red/"
           target="_blank"
           rel="noopener noreferrer"
@@ -119,7 +119,7 @@ export default function Navbar() {
 
           {/* Soft background hover effect */}
           <span className="absolute inset-0 bg-gradient-to-r from-red-500 via-blue-500 to-red-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
-        </a>
+        </a>*/}
       </div>
       {/* Right Section (Contribute & Theme Toggle) */}
       <div className="flex items-center space-x-1">
