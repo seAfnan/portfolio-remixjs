@@ -22,7 +22,7 @@ import { VscChecklist } from "react-icons/vsc";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Afnan Ahmad" },
+    { title: "Afnan A." },
     { name: "description", content: "My personal website." },
   ];
 };
