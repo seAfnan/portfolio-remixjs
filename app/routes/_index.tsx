@@ -19,6 +19,7 @@ import { MdOutlineDraw } from "react-icons/md";
 import { RiRobot2Fill } from "react-icons/ri";
 import Typewriter from "typewriter-effect";
 import { VscChecklist } from "react-icons/vsc";
+import { LuBookDashed } from "react-icons/lu";
 
 export const meta: MetaFunction = () => {
   return [
@@ -171,7 +172,7 @@ const resources = [
     highlightIndices: [],
     details:
       "Turn your adventures into Chain of memories",
-    icon: <MdOutlineDraw />,
+    icon: <LuBookDashed />,
     iconColor: "hover:text-blue-500 dark:hover:text-blue-500",
     textColor: "text-blue-600",
     type: "live",
