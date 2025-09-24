@@ -152,19 +152,6 @@ export default function Index() {
 
 const resources = [
   {
-    href: "https://botshot.elements.red/",
-    codeLink: "https://github.com/seAfnan/botshot",
-    label: "Botshot",
-    highlightIndices: [],
-    details:
-      "Botshot is a multi-LLM AI assistant that lets you chat with and compare responses from different language models—locally or via APIs—all in one place.",
-    icon: <RiRobot2Fill />,
-    iconColor: "hover:text-gray-500 dark:hover:text-gray-500",
-    textColor: "text-gray-600",
-    type: "live",
-    stack: ["ts", "nextjs", "oauth", "mongodb"],
-  },
-  {
     href: "https://www.elements.red/",
     codeLink: "https://www.elements.red/",
     label: "elements",
@@ -176,6 +163,32 @@ const resources = [
     textColor: "text-red-600",
     type: "live",
     stack: ["ts", "nextjs", "zustand", "mongodb"],
+  },
+  {
+    href: "https://www.lifediary.me/",
+    codeLink: "https://www.lifediary.me/",
+    label: "LifeDiary",
+    highlightIndices: [3],
+    details:
+      "Turn your adventures into Chain of memories",
+    icon: <MdOutlineDraw />,
+    iconColor: "hover:text-blue-500 dark:hover:text-blue-500",
+    textColor: "text-blue-600",
+    type: "live",
+    stack: ["ts", "nextjs", "backblaze", "mongodb"],
+  },
+  {
+    href: "https://botshot.elements.red/",
+    codeLink: "https://github.com/seAfnan/botshot",
+    label: "Botshot",
+    highlightIndices: [],
+    details:
+      "Botshot is a multi-LLM AI assistant that lets you chat with and compare responses from different language models—locally or via APIs—all in one place.",
+    icon: <RiRobot2Fill />,
+    iconColor: "hover:text-gray-500 dark:hover:text-gray-500",
+    textColor: "text-gray-600",
+    type: "live",
+    stack: ["ts", "nextjs", "oauth", "mongodb"],
   },
   {
     href: "https://github.com/seAfnan/timesheet-pro",
