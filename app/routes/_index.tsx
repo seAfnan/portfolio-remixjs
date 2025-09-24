@@ -168,7 +168,7 @@ const resources = [
     href: "https://www.lifediary.me/",
     codeLink: "https://www.lifediary.me/",
     label: "LifeDiary",
-    highlightIndices: [3],
+    highlightIndices: [],
     details:
       "Turn your adventures into Chain of memories",
     icon: <MdOutlineDraw />,
